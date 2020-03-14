@@ -1,0 +1,73 @@
+<template>
+    <lightning-card icon-name="standard:location" title={getCityName}>
+        <lightning-layout icon-name="utility:location" vertical-align="center" >
+            <lightning-layout-item size="6" medium-device-size="4" padding="around-small">
+                <lightning-combobox   name="cities"
+                    label="Cities"
+                    value={value}
+                    placeholder="--Select--"
+                    options={options} 
+                    onchange={handleChange} >
+                </lightning-combobox>
+            </lightning-layout-item>
+            
+            <lightning-layout-item size="6" medium-device-size="4"   class="left-align">
+                <div class="slds-var-m-around_medium slds-var-p-top_medium ">
+                         <lightning-button label={toggleButtonLabel} title="Toggle content action"  icon-name={toggleIconName}
+                        onclick={handleToggleClick}>
+                    </lightning-button>
+                   
+
+                    <lightning-helptext class="slds-var-p-around_small" content="Select Cities from Drop down to view Weather or Click on Button to know current location Weather."></lightning-helptext>
+                    
+                 </div>
+                
+            </lightning-layout-item> 
+            
+        </lightning-layout>
+        <lightning-layout>
+                <lightning-layout-item size="1" medium-device-size="3" padding="around-small">
+                    <lightning-card icon-name="standard:skill_requirement" title="Current Temperature">
+                        <div class="slds-align_absolute-center color-orange ">
+                            <template if:true={result}>
+                                {getConvertedTemp}
+                            </template>
+                        </div>
+                    </lightning-card>
+                </lightning-layout-item>
+                <lightning-layout-item size="1" medium-device-size="3" padding="around-small">
+                    <lightning-card icon-name="utility:frozen" title="Current Wind Speed">
+                        <div class="slds-align_absolute-center color-grey">
+                            <template if:true={result}>
+                                {getCurrentWindSpeed}
+                            </template>
+                        </div>
+                    </lightning-card>
+                </lightning-layout-item>
+                <lightning-layout-item size="1" medium-device-size="3" padding="around-small">
+                    <lightning-card icon-name="standard:merge" title="Precipitation">
+                        <div class="slds-align_absolute-center color-yellow">
+                            <template if:true={result}>
+                                {getCurrentPrecip}
+                            </template>
+                        </div> 
+                    </lightning-card>
+                </lightning-layout-item>
+                <lightning-layout-item size="1" medium-device-size="3" padding="around-small">
+                    <lightning-card icon-name="standard:salesforce_cms" title="Humidity">
+                        <div class="slds-align_absolute-center color-blue">
+                            <template if:true={result}>
+                                {getCurrenthumidity}
+                            </template>
+                        </div> 
+                    </lightning-card>
+                </lightning-layout-item>
+            </lightning-layout>
+        <lightning-map
+            map-markers={mapMarkers}
+            zoom-level={zoomLevel}
+            onmarkerselect={handleMarkerSelect}
+            selected-marker-value={selectedMarkerValue}>
+        </lightning-map>
+    </lightning-card>
+</template>
