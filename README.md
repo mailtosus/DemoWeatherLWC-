@@ -1,3 +1,29 @@
+This File  contains step guide process for DemoWeather component.
+
+Welcome to DemoWeatherLWC Component 
+
+This  component is designed to display current temprature , humidity, wind speed and precipation od any selected location or yout current location 
+on Load / on start of the component it will promt you google Chrome location sevices to access your location please allow for component to load your geo location 
+
+If accidentally denied , please go to Google Chrome Settings  and search : location , then click on Stie Location then Location then if will show blocked and allowed stied please unblock your  current org which is hosting this LWC component.
+Please Check location services for System as well in Cases.
+
+After enbalement of location services please Open the Page hosting this component.
+Page will load on your current location and will present you your home location Weather deatils. 
+
+You can select any city from the drop down to see weather details for any listed city.
+if you wish to know your current location weather details  again please click : My Current Location to know your current location again. 
+On Any location Load LWC componet will give you Goggle map to browse and show current selected location. 
+
+On selection and On Load Map marker will show selected value. 
+You can Browser on map to know about surrounding if any more details is needed from nar by google marker please click on them the help text will hsow short details and you can click on it further to open location on seperate window. 
+Currently accessing markers back to salesforce is not possible in salesforce you can open this in new window. 
+you can stay tuned for more updated on this. 
+Thanks and have a nce day.
+
+
+
+
 # Salesforce App
 
 This guide helps Salesforce developers who are new to Visual Studio Code go from zero to a deployed app using Salesforce Extensions for VS Code and Salesforce CLI.
