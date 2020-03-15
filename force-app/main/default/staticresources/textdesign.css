@@ -1,0 +1,41 @@
+.color-blue {
+    background-color: #1E90FF;
+    height: 50px;
+    color: white;
+    font-family: Tahoma;
+    font-size: 30px;
+    font-weight: 25000;
+    border-radius: 15px;
+}
+
+.color-orange {
+    background-color: #FF7F50;
+    height: 50px;
+    color: white;
+    font-family: Tahoma;
+    font-size: 30px;
+    font-weight: 25000;
+    border-radius: 15px;
+}
+ 
+.color-yellow{
+    background-color: #FFD93D;
+   height: 50px;
+    color: white;
+    font-family: Tahoma;
+    font-size: 30px;
+    font-weight: 25000;
+    border-radius: 15px;
+}
+ 
+.color-grey{
+    background-color: grey;
+    height: 50px;
+    color: white;
+    font-family: Tahoma;
+    font-size: 30px;
+    font-weight: 25000;
+    border-radius: 15px;
+}
+
+
