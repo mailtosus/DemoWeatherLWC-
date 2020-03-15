@@ -21,7 +21,25 @@ Currently accessing markers back to salesforce is not possible in salesforce you
 you can stay tuned for more updated on this. 
 Thanks and have a nce day.
 
+Deployment Setps if pulled in VS CODE : 
 
+1 : Git Clone  https://github.com/sparshbh/DemoWeatherLWC- command in command pallet 
+2 : Auth Demo Org 
+3 : Deploy Order : 
+1) static Resource 
+2) Log Object , then Custom Field 
+3)Named Credentials 
+4) Apex Classes : 1) Log Utils class, Demoweather Class , mock class and then test 
+5) LWC component 
+6) Flexi page 
+7) application 
+
+Make sure app is visible to profiles 
+
+have fun !! 
+
+keep me updated 
+Sparsh 
 
 
 # Salesforce App
